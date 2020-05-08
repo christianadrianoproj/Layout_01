@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Layout_01</string>
+    <string name="title">Titulo</string>
+    <string name="status">Status</string>
+    <string name="itemDone">Done</string>
+    <string name="itemNotDone">Not Done</string>
+    <string name="priority">Prioridade</string>
+    <string name="priorityLow">Baixa</string>
+    <string name="priorityMedia">Média</string>
+    <string name="priorityHigh">Alta</string>
+    <string name="TimeAndDate">Data e Hora</string>
+    <string name="chooseDate">Alterar Data</string>
+    <string name="chooseTime">Alterar Hora</string>
+    <string name="cancel">Cancelar</string>
+    <string name="reset">Redefinir</string>
+    <string name="submit">Enviar</string>
+    <color name="preto">#000000</color>
+    <color name="branco">#FFFFFF</color>
+</resources>

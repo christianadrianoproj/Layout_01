@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="24dp"
+    android:background="@color/preto"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="@string/title"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/EditText_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="@string/status"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/rb_item2"
+        android:textColor="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_item1"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/itemDone">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_item2"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/itemNotDone">
+        </RadioButton>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="@string/priority"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rg_group2"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/rb_g2_item2"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_g2_item1"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/priorityLow">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_g2_item2"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/priorityMedia">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_g2_item3"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/priorityHigh">
+        </RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="@string/TimeAndDate"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="100dp"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:text="08/05/2020" />
+
+            <Button
+                android:id="@+id/bt_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/chooseDate" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="#FFFFFF"
+                android:text="19:45:15" />
+
+            <Button
+                android:id="@+id/bt_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chooseTime" />
+        </LinearLayout>
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4">
+
+            <Button
+                android:id="@+id/bt_001"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/bt_002"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:text="@string/reset" />
+
+
+            <Button
+                android:id="@+id/bt_003"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:layout_gravity="right"
+                android:text="@string/submit" />
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>
